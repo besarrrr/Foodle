@@ -1,3 +1,23 @@
+var foodInputEl = document.querySelector('#foodinput');
+var userFormEl = document.querySelector('#user-form');
+
+ // User Input Call
+
+ var formSubmitHandler = function(event) {
+    	event.preventDefault();
+     var dishname = foodInputEl.value.trim();
+   
+    if (dishname) {
+       getDescription(dishname)
+        foodInputEl.value = "";
+
+    } else {
+        alert("Please enter a valid food item/category")
+    }
+
+ };
+
+ //API Call
 const options = {
 	method: 'GET',
 	headers: {
@@ -6,7 +26,12 @@ const options = {
 	}
 };
 function getDescription(dishname){
-    fetch("https://tasty.p.rapidapi.com/recipes/auto-complete?prefix="+dishname, options).then(response =>response.json())
-    .then(response=> console.log(response))
+    fetch('https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&q=' + dishname, options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
 }   
-getDescription("chicken pasta")
+
+
+// user submit event listener 
+userFormEl.addEventListener("submit", formSubmitHandler);
