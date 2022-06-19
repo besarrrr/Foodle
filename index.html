@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Foodle</title>
 </head>
+
 <body>
 
     <header>
         <div id="header1">
             <h2 id="title">Foodle-<small>inc.</small></h2>
             <form id="user-form">
-                <input name="foodsearch"  type = "text" id="foodinput" placeholder="What Are You Craving?"/>
+                <input name="foodsearch" type="text" id="foodinput" placeholder="What Are You Craving?" />
             </form>
-            </div>
+        </div>
         </div>
 
-        <div id="categories">
-                <a href="">Asian</a>
-                <a href="">Mexican</a>
-                <a href="">Italian</a>
-                <a href="">Surprise!</a> <!-- This does not need to stay as it might be really hard to code lol-->
-        </div> 
+        <!-- changed categories to nav bar for favorites -->\
+        <div id="nav-bar">
+            <a href="">Favorites</a>
+        </div>
 
     </header>
 
     <main>
         <!-- First section -->
-            <div id="container1">
-                <div id="picture" >
-                    <!-- picture goes here-->
-                </div> 
-                <div id="description"> 
-                    <!-- Description-->
-                </div>
+        <div id="container1">
+            <div id="picture">
+                <!-- picture goes here-->
             </div>
-
-            <!-- Second Section-->
-            <div id="container2">
-
-                <div id="recipes">
-                    <!-- Recipe list-->
-                </div> 
-               
+            <div id="description">
+                <!-- Description-->
             </div>
+        </div>
+
+        <!-- Second Section-->
+        <div id="container2">
+
+            <div id="recipes">
+                <!-- Recipe list-->
+            </div>
+            <nav id="pages">
+                <button id="btnBack" class="hidden">Back</button>
+                <button id="btnNext" class="hidden">Next</button>
+            </nav>
+
+        </div>
+
 
     </main>
     <script src="./assets/js/script.js"> </script>
 </body>
+
 </html>
