@@ -9,13 +9,14 @@
         integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Foodle</title>
 </head>
 
 <body>
 
     <header>
+
         <div id="header1" class="box hero is-primary is-size-1 has-text-centered">
             <h2 id="title">Foodle-<small>inc.</small></h2>
             <form id="user-form">
@@ -34,6 +35,27 @@
         <!-- First section -->
         <div id="container1" class="column is-large">
             <div id="picture" class="box">
+
+        <div id="header1">
+            <h2 id="title">Foodle-<small>inc.</small></h2>
+            <form id="user-form">
+                <input name="foodsearch" type="text" id="foodinput" placeholder="What Are You Craving?" />
+            </form>
+        </div>
+        </div>
+
+        <!-- changed categories to nav bar for favorites -->\
+        <div id="nav-bar">
+            <a href="">Favorites</a>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- First section -->
+        <div id="container1">
+            <div id="picture">
+
                 <!-- picture goes here-->
             </div>
             <div id="description">
@@ -42,15 +64,26 @@
         </div>
 
         <!-- Second Section-->
+
         <div id="container2" class="column is-large">
 
             <div id="recipes" class="box">
+
+        <div id="container2">
+
+            <div id="recipes">
+
                 <!-- Recipe list-->
             </div>
             <nav id="pages">
                 <button id="btnBack" class="hidden">Back</button>
                 <button id="btnNext" class="hidden">Next</button>
             </nav>
+
+
+        </div>
+
+
 
     </main>
     <script src="./assets/js/script.js"> </script>
