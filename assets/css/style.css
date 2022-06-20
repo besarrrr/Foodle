@@ -1,0 +1,41 @@
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    margin-top: 10px ;
+    margin-bottom: 2px;
+
+}
+
+#header1 {
+    margin-left: 15px;
+}
+
+#categories {
+    margin-right: 15px;
+}
+
+#categories a{
+    padding-left: 15px;
+    font-size: 20px;
+    
+}
+
+input[type=text] {
+    padding: 7px 15px;
+    box-sizing: border-box;
+    width: 90%;
+  }
+
+.hidden {
+    visibility: hidden;
+}
+
+.recipe-image {
+    cursor: pointer;
+}
