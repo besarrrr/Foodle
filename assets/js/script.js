@@ -30,9 +30,7 @@ $('body').on('click', '.recipe-image', function (e) {
 	// TODO: Show loading message
 	let id = $(this).data('id');
 	getRecipeDetails(id).then(details => {
-		/*
-		TODO: Display detail data
-		*/ 
+		displayRecipeDetails(details)
 		console.log(details)
 	});
 });
@@ -138,6 +136,29 @@ function displayResults(data) {
 		btnNext.classList.add("hidden");
 
 	}
+}
+
+function displayRecipeDetails(data){
+	
+	const instructionsHtml = [];
+	for (let i=0; i<data.instructions.length;i++){
+		let instruction = data.instructions[i];
+		instructionsHtml.push(`<li>${instruction.display_text}</li>`)
+	}	
+	const html = `
+	<div id="picture" class="box">
+		<img alt="${data.thumbnail_alt_text}" src="${data.thumbnail_url}">
+	</div>
+	<div id="description">
+		${data.description}
+	</div>
+	<div>
+		<ol>
+			${instructionsHtml.join('')}
+		</ol>
+	</div>`;
+	$("#recipe-details").html(html);
+	
 }
 
 // Show loading message
