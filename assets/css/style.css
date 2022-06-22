@@ -3,6 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 5px;
 }
 
 #title {
@@ -37,4 +38,13 @@ input[type=text] {
 
 .recipe-image {
     cursor: pointer;
+}
+
+#recipe-details {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+#nav-bar {
+    margin-left: 15px;
 }
