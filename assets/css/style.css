@@ -49,6 +49,10 @@ input[type=text] {
     margin-left: 15px;
 }
 #show-favorites {
-    cursor:pointer;
-    color:blue;
-}
+    cursor:pointer; 
+    text-decoration: underline; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    color:rgb(40, 121, 234);
+ }
