@@ -10,3 +10,13 @@ Therefore, I check in box "save to favorite" to save my favorite dish's ingredie
 Given a Foodle Page with a form input
 When I search for a specific dish
 Then I am presented with a picture together with a description and a list of ingredients of that dish.
+When i choose a random result and click on that image
+Then i am presented with a bigger image together with the description, recipe detail and a video related to the result.
+When i click next button 
+Then i am presented with the next page of the list
+When i click back button 
+Then i am presented with the previous page of the list
+When i click save on a dish
+Then that dish will go into favorites
+When i click on favorites
+Then i am presented with a list of dishes that i like and saved. 
