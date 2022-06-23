@@ -3,8 +3,8 @@ Group Project 1
 
 1.User Story:
 As a person who loves to cook
-I want to find recipes and ingrediensts that i need to prepare for my favorite dishes.
-Therefore, I check in box "save to favorite" to save my favorite dish's ingredients that i need to prepare for the cooking.
+I want to find recipes that i need to prepare for my favorite dishes.
+Therefore, I check in box "save to favorite" to save my favorite dish's recipes that i need to prepare for the cooking.
 
 2.Criteria:
 Given a Foodle Page with a form input
