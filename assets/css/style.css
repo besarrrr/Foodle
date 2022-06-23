@@ -48,3 +48,7 @@ input[type=text] {
 #nav-bar {
     margin-left: 15px;
 }
+#show-favorites {
+    cursor:pointer;
+    color:blue;
+}
