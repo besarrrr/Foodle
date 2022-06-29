@@ -86,7 +86,7 @@ btnBack.addEventListener("click", function () {
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'fbf54e1fafmsh5891b6dfc646e7bp12d715jsn345a8e06d44e',
+		'X-RapidAPI-Key': '236b39056emsh08f3b62cbf76b32p1cf617jsnbd1f682203c0',
 		'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
 	}
 };
